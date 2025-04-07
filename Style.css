@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.Emptybox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color:  lightgray;
+    padding: 20px;
+
+    
+    
+    
+}
+
+.GroupName{
+    font-size: 20px;
+    display:block;
+    color: brown;
+    padding-left: 20px;
+    position: fixed;
+}
+
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: brown;
+    transition: ease-in-out;
+}
+
+
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 18%;
+    padding: 0px;
+    border-top-right-radius: 20px;
+}
+
+.card {
+        width: 200px;
+        height: 300px;
+        position: relative;
+        transform-style: preserve-3d; 
+        transition: transform 0.6s; 
+    }
+.card:hover {
+        transform: rotateY(180deg); 
+    }
+
+    .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        font-size: 20px;
+
+    }    
+
+
+.card-front img {
+    width: inherit; 
+    height: inherit;
+    border-top-right-radius: 20px;
+    display: block;
+    padding: 0%;
+}
+.card-back {
+
+    transform: rotateY(180deg);
+    border-top-right-radius: 20px;
+}
+
+.card-back img{
+    width: fit-content;
+    border-top-right-radius: 20px;
+    
+}
+
+p{
+    color: skyblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+    
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    color: rgba(248, 246, 245, 0.808);
+    margin: 0 21%;
+}
